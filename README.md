@@ -283,6 +283,8 @@ airflow connections add redis_fare_cache \
 
 ## Author
 
+# Suresh Shanmugam
+
 Built by an Uber driver and data engineer who got tired of watching gas prices move while fares stood still.
 
 *This is a portfolio/concept project. Not affiliated with Uber Technologies, Inc.*
