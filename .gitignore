@@ -1,0 +1,99 @@
+# ─────────────────────────────────────────
+# GPAF Project — .gitignore
+# ─────────────────────────────────────────
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+ENV/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# Environment variables & secrets — NEVER commit these
+.env
+.env.local
+.env.*.local
+*.env
+secrets.json
+service_account.json
+*_credentials.json
+*_key.json
+gcp_key*.json
+airflow_connections.json
+
+# GCP / BigQuery
+.gcp/
+application_default_credentials.json
+
+# Airflow
+airflow.cfg
+airflow.db
+airflow-webserver.pid
+standalone_admin_password.txt
+logs/
+dags/__pycache__/
+plugins/__pycache__/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# IDE — VS Code
+.vscode/
+*.code-workspace
+
+# IDE — PyCharm / IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# IDE — Cursor
+.cursor/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Testing & coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+nosetests.xml
+
+# Logs & temp files
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Data files — don't push raw data to GitHub
+*.csv
+*.parquet
+*.json
+data/
+raw_data/
+output/
